@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: test-codegen-dummy-4
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: test-codegen-dummy-4 
+  name: test-codegen-dummy-4
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi
